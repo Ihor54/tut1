@@ -22,7 +22,7 @@ namespace Tutorial1
                 if (response.IsSuccessStatusCode)
                 {
                     var htmlContent = await response.Content.ReadAsStringAsync();
-
+                    var x = "kjrlhfkjrhf";
                     var regex = new Regex("[a-z]+[a-z0-9]*@[a-z0-9]+\\.[a-z]+", RegexOptions.IgnoreCase);
 
                     var emailAddresses = regex.Matches(htmlContent);
